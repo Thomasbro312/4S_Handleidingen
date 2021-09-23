@@ -35,15 +35,17 @@
             </ul>
 
         </div>
-
-        <div class="row">
-            @include('includes.footer')
-        </div>
-
+        
+        
     </div>
 
 
 </div>
+<footer><div class="card-footer">
+            
+            @include('includes.footer')
+
+    </div></footer>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
