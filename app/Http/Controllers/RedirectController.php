@@ -33,4 +33,6 @@ class RedirectController extends Controller
         $url = URL::to('sitemap-brand-'.$brand->id).'.xml';
         return redirect()->route($url);
     }
+
+    
 }
