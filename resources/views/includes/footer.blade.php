@@ -1,6 +1,15 @@
 
 <footer>
-	© {{ __('misc.copyright') }}
+<a href=""><i class="fas fa-envelope"></a></i> 
+&nbsp&nbsp|&nbsp&nbsp
+<a href="">{{ __('misc.about_us') }}</a>
+&nbsp&nbsp|&nbsp&nbsp
+© {{ __('misc.copyright') }}
+&nbsp&nbsp|&nbsp&nbsp
+<a href="">{{ __('misc.contact_information')}}</a>
+&nbsp&nbsp|&nbsp&nbsp
+<a href=""><i class="fas fa-retweet"></i></a>
+
 </footer>
 
 

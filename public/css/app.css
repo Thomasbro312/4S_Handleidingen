@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-@charset "UTF-8";
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -155,12 +154,12 @@ sup {
 }
 
 a {
-  color: #3490dc;
+  color: #dc3434;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #1d68a7;
+  color: #b9631c;
   text-decoration: underline;
 }
 
@@ -549,10 +548,26 @@ pre code {
   margin-left: auto;
   display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: center;
 	align-content: center;
+}
+
+.background-brands{
+ background-color: #e9ecef;
+ padding: 2rem 1rem;
+ margin-bottom: 2rem;
+  border-radius: 0.3rem;
+}
+.download-button{
+    background-color: darkgray;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 1rem;
 }
 
 @media (min-width: 576px) {
@@ -578,7 +593,7 @@ pre code {
 .row {
   display: flex;
   flex-wrap: nowrap;
-  align-items: flex-end;
+  
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -3967,7 +3982,6 @@ input[type=button].btn-block {
 .navbar {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
@@ -3991,9 +4005,15 @@ input[type=button].btn-block {
   font-size: 2.125rem;
   line-height: inherit;
   white-space: nowrap;
+  font-weight:bold;
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
+}
+
+.dataHandleidingen{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .navbar-nav {
@@ -4082,7 +4102,7 @@ input[type=button].btn-block {
 .navbar-expand-sm > .container-md,
 .navbar-expand-sm > .container-lg,
 .navbar-expand-sm > .container-xl {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
   .navbar-expand-sm .navbar-nav-scroll {
     overflow: visible;
@@ -4120,14 +4140,6 @@ input[type=button].btn-block {
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-  }
-  .navbar-expand-md > .container,
-.navbar-expand-md > .container-fluid,
-.navbar-expand-md > .container-sm,
-.navbar-expand-md > .container-md,
-.navbar-expand-md > .container-lg,
-.navbar-expand-md > .container-xl {
-    flex-wrap: nowrap;
   }
   .navbar-expand-md .navbar-nav-scroll {
     overflow: visible;
@@ -4252,14 +4264,6 @@ input[type=button].btn-block {
 .navbar-expand .navbar-nav .nav-link {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-}
-.navbar-expand > .container,
-.navbar-expand > .container-fluid,
-.navbar-expand > .container-sm,
-.navbar-expand > .container-md,
-.navbar-expand > .container-lg,
-.navbar-expand > .container-xl {
-  flex-wrap: nowrap;
 }
 .navbar-expand .navbar-nav-scroll {
   overflow: visible;

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     @include('includes.head')
-
+    <script src="https://kit.fontawesome.com/b9e1aa0726.js" crossorigin="anonymous"></script>
     @yield('head')
 </head>
 <body>
@@ -10,23 +10,25 @@
 @include('includes.navbar')
 
 <div class="container">
+    
     <div class="row">
 
         <div class="col-md-8">
             @include('includes.header')
-
+        
             <ul class="breadcrumb">
                 <li><a href="/" title="{{ __('misc.home_alt') }}"
                        alt="{{ __('misc.home_alt') }}">{{ __('misc.home') }}</a></li>
                 @yield('breadcrumb')
             </ul>
-
+                <div class="background-brands">
             @if ( isset($_GET['q']) )
                 @include('includes.search_results')
             @else
                 @yield('content')
             @endif
-
+                </div>
+                <br>
             <ul class="breadcrumb">
                 <li>
 					<a href="/" title="{{ __('misc.home_alt') }}" alt="{{ __('misc.home_alt') }}">{{ __('misc.home') }}</a>
@@ -35,8 +37,10 @@
             </ul>
 
         </div>
-        
-        
+        <div>
+            
+        </div>
+        ,
     </div>
 
 
